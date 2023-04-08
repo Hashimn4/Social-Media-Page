@@ -8,21 +8,21 @@ let html = `
             <img src='../images/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg' >
         </div>
         <div class="card__wrapper-info">
-            <p>Christina Everleen</p>
-            <p>Human Resources Expert</p>
+            <p class="info-name">Christina Everleen</p>
+            <p class="info-profession">Human Resources Expert</p>
         </div>
         <div class="card__wrapper-socials">
             <div class="socials-facebook">
                 <img src="../images/facebook-icon.png">
-                <p>facebook</p>
+                <p>Facebook</p>
             </div>
             <div class="socials-instagram">
                 <img src="../images/instagram-icon.png">
-                <p>facebook</p>
+                <p>Instagram</p>
             </div>
             <div class="socials-twitter">
                 <img src="../images/twitter-icon.png">
-                <p>facebook</p>
+                <p>Twitter</p>
             </div>
         </div>
     </div>
@@ -40,13 +40,15 @@ let cssStyles = `
     .card__wrapper {
         width: min(100%, 300px);
         height: 400px;
-        border-radius: 20px;
+        border-radius: 10px;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 20px;
         text-align: center;
+        font-family: 'Noto Sans', sans-serif; 
     }
 
     .card__wrapper-image {
@@ -62,6 +64,64 @@ let cssStyles = `
         object-fit: cover;
         border-radius: 50%;
     }
+
+    .card__wrapper-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px
+    }
+
+    .info-name {
+        font-weight: 700;
+    }
+
+    .info-profession {
+        font-size: 0.8rem;
+    }
+
+    .card__wrapper-socials {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        gap: 5px;
+    }
+
+    .card__wrapper-socials img{
+        width: 15px;
+        margin: 0 40px 0 0;
+    }
+
+    .socials-facebook {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #1778F2;
+        padding: 10px 0 10px 10px;
+        border-radius: 3px;
+        color: #1778F2;
+    }
+
+    .socials-instagram {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #833AB4;
+        padding: 10px 0 10px 10px;
+        border-radius: 3px;
+        color: #E1306C;
+    }
+
+    .socials-twitter {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #1DA1F2;
+        padding: 10px 0 10px 10px;
+        gap: 10px;
+        border-radius: 3px;
+        color: #1DA1F2;
+    }
+
 `;
 
 body.prepend(root);
