@@ -101,6 +101,12 @@ let cssStyles = `
         color: #1778F2;
     }
 
+    .socials-facebook:hover {
+        cursor: pointer;
+        background-color: #1778F2;
+        color: white;
+    }
+
     .socials-instagram {
         display: flex;
         align-items: center;
@@ -109,6 +115,12 @@ let cssStyles = `
         padding: 10px 0 10px 10px;
         border-radius: 3px;
         color: #E1306C;
+    }
+
+    .socials-instagram:hover {
+        cursor: pointer;
+        background-color: #E1306C;
+        color: white;
     }
 
     .socials-twitter {
@@ -122,6 +134,11 @@ let cssStyles = `
         color: #1DA1F2;
     }
 
+    .socials-twitter:hover {
+        cursor: pointer;
+        background-color: #1DA1F2;
+        color: white;
+    }
 `;
 
 body.prepend(root);
